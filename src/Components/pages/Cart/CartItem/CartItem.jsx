@@ -30,7 +30,7 @@ const CartItem = ({ imageUrl, name, price, id, count, sum, promo }) => {
 
     return (
         <div className='CartItem--wrapper'>
-            <img className='CartItem--itemImg' src={imageUrl} alt='item' />
+            <img className='CartItem--itemImg' src={imageUrl ? imageUrl : 'https://i.stack.imgur.com/y9DpT.jpg'} alt='item' />
             <p className='CartItem--name'>{name}</p>
             <div>
                 <div className='CartItem--control_block'>

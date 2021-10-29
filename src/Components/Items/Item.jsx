@@ -24,7 +24,7 @@ const Item = ({ imageUrl, name, price, promo }) => {
 
     return (
         <div className='Item--wrapper'>
-            <img src={imageUrl} alt='item-img' />
+            <img src={imageUrl ? imageUrl : 'https://i.stack.imgur.com/y9DpT.jpg'} alt='item-img' />
             <p className='Item--name'>{name}</p>
             <div className='Item--button_block'>
                 <p>{price} р.</p>
