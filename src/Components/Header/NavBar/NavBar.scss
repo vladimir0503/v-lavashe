@@ -22,9 +22,14 @@
             border-radius: 20px;
             transition: 0.2s;
         }
+    }
 
-        .Navbar--active {
-            background-color: #ffffff;
-        }
+    .Navbar--active {
+        background-color: #ffffff;
+        border: double 2px transparent;
+        border-radius: 20px;
+        background-image: linear-gradient(white, white), linear-gradient(to top, #ffc804, white);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
     }
 }
