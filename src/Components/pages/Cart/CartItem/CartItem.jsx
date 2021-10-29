@@ -16,7 +16,7 @@ const CartItem = ({ imageUrl, name, price, id, count, sum, promo }) => {
             price,
             promo,
             id: Math.random().toString(36).substr(2, 9)
-        }
+        };
         dispatch(addCardItem(newItem));
     };
 
