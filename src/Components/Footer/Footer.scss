@@ -1,0 +1,42 @@
+.Footer--wrapper {
+    width: 100%;
+    height: 284px;
+    padding-top: 141px;
+    background: linear-gradient(180deg, rgba(255, 200, 4, 0) 0%, #ffc804 36.46%);
+
+    p {
+        margin: 0;
+    }
+}
+
+.Footer--content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 114px;
+}
+
+.Footer--mail {
+    font-size: 48px;
+    line-height: 59px;
+    letter-spacing: 0.1em;
+}
+
+.Footer--phone {
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.Footer--copyright {
+    display: flex;
+    align-items: flex-start;
+    width: 1200px;
+    margin: 0 auto;
+
+    p {
+        font-size: 36px;
+        line-height: 44px;
+    }
+}

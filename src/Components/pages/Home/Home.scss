@@ -1,0 +1,29 @@
+.Main--wrapper {
+}
+
+.Main--stock_img {
+    margin-bottom: 74px;
+}
+
+.Main--delivery_info {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: start;
+
+    h1 {
+        font-size: 64px;
+        line-height: 78px;
+    }
+
+    p,
+    ul {
+        font-size: 36px;
+        line-height: 44px;
+    }
+}
+
+.Main--items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

@@ -1,0 +1,52 @@
+.Contacts--contentWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 169px;
+
+    p,
+    a {
+        text-align: start;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 29px;
+        line-height: 34px;
+    }
+}
+
+.Contacts--infoBlock {
+    width: 450px;
+}
+
+.Contacts--infoItem {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 28px;
+
+    img {
+        margin-right: 28px;
+    }
+
+    img[alt="gps"] {
+        width: 70px;
+        height: 70px;
+        margin-top: -26px;
+    }
+
+    img[alt="phone"] {
+        width: 55px;
+        height: 55px;
+    }
+
+    img[alt="email"] {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.Contacts--map {
+    border: 2px solid #ffc804;
+    border-radius: 20px;
+}

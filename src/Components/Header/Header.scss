@@ -1,0 +1,72 @@
+%text-style {
+    font-family: "Calibri";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 37px;
+}
+
+.Header--wrapper {
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding-top: 52px;
+    margin-bottom: 58px;
+    width: 100%;
+    height: 227px;
+    background: linear-gradient(180deg, #ffc804 0%, #ffffff 99.99%, rgba(255, 255, 255, 0) 100%);
+}
+
+.Header--logo {
+    width: 287px;
+    height: 85px;
+}
+
+.Header--contentBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 85px;
+    margin: 0 auto;
+    margin-bottom: 85px;
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 13px 0 13px;
+        width: 197px;
+        height: 74px;
+        background-color: transparent;
+        opacity: 100;
+        border: 4px solid #ffffff;
+        box-sizing: border-box;
+        border-radius: 48px;
+    }
+
+    p {
+        @extend %text-style;
+        margin: 0;
+    }
+
+    a {
+        @extend %text-style;
+    }
+}
+
+.Header--delivery {
+    display: flex;
+    flex-direction: column;
+    width: 268px;
+
+    // p {
+    //     font-size: 30px;
+    // }
+}
+
+.Header--phone {
+    width: 268px;
+}

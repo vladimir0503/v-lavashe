@@ -1,0 +1,91 @@
+%btn-selector {
+    width: 90px;
+    height: 55px;
+    background: rgba(255, 200, 4, 0.4);
+}
+
+%btn-selector-text {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.1em;
+}
+
+.CartItem--wrapper {
+    padding: 37px 0 37px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid #000000;
+}
+
+.CartItem--itemImg {
+    width: 348px;
+    height: 170px;
+    object-fit: cover;
+    border: 2px solid #ffc804;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.CartItem--name {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.1em;
+}
+
+.CartItem--button_selector {
+    display: flex;
+
+    div {
+        @extend %btn-selector-text;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90px;
+        height: 55px;
+        background: #ffffff;
+        border: 2px solid rgba(255, 200, 4, 0.4);
+        box-sizing: border-box;
+    }
+}
+
+.button_selector--btn1 {
+    @extend %btn-selector;
+    @extend %btn-selector-text;
+    border-radius: 20px 0px 0px 20px;
+
+    &:active {
+        background-color: #ffc804;
+    }
+}
+
+.button_selector--btn2 {
+    @extend %btn-selector;
+    @extend %btn-selector-text;
+    border-radius: 0px 20px 20px 0px;
+
+    &:active {
+        background-color: #ffc804;
+    }
+}
+
+.CartItem--control_block {
+    display: flex;
+    align-items: center;
+}
+
+.CartItem--price {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.1em;
+    text-align: end;
+    margin-right: 53px;
+}
