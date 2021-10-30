@@ -124,12 +124,6 @@
     }
 }
 
-@media screen and (min-width: 1050px) {
-    .Header--items_count {
-        display: none;
-    }
-}
-
 .Header--items_count {
     @extend %text-style;
     position: absolute;
@@ -144,4 +138,10 @@
     border-radius: 50px;
     background-color: white;
     font-size: 20px;
+}
+
+@media screen and (min-width: 1050px) {
+    .Header--items_count {
+        display: none;
+    }
 }

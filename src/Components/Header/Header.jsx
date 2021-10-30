@@ -34,11 +34,9 @@ const Header = () => {
                     <div>
                         <Link to="/cart">
                             <button>
-                                <div className='Header--items_count'>{itemsCount}</div>
-                                <div>
-                                    <img src={cart} alt='cart' />
-                                    <p>{sum} р.</p>
-                                </div>
+                                {!!itemsCount && <div className='Header--items_count'>{itemsCount}</div>}
+                                <img src={cart} alt='cart' />
+                                <p>{sum} р.</p>
                             </button>
                         </Link>
                     </div>
