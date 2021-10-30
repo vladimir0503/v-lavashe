@@ -54,3 +54,18 @@
 .Menu--wrapper__loader-block {
     margin-left: 485px;
 }
+
+// For tablets 1000px
+
+@media screen and (max-width: 1050px) {
+    .Menu--sort_block__btn_block {
+        button {
+            width: 295px;
+            height: 120px;
+        }
+    }
+
+    .Menu--wrapper__items_block {
+        width: 936px;
+    }
+}

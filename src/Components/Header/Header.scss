@@ -66,3 +66,82 @@
 .Header--phone {
     width: 268px;
 }
+
+// For tablets 1000px
+
+@media screen and (max-width: 1050px) {
+    .Header--logo {
+        margin-top: -15px;
+    }
+
+    .Header--contentBlock {
+        width: 936px;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        button {
+            position: relative;
+            z-index: 1;
+            width: 74px;
+            height: 74px;
+            padding-left: 6px;
+
+            p {
+                display: none;
+            }
+        }
+    }
+
+    .Header--delivery {
+        display: none;
+    }
+
+    .Header--phone {
+        a {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 37px;
+        }
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .Header--delivery_tablet {
+        display: none;
+    }
+}
+
+.Header--delivery_tablet {
+    text-align: start;
+
+    p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 37px;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .Header--items_count {
+        display: none;
+    }
+}
+
+.Header--items_count {
+    @extend %text-style;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    bottom: 52px;
+    left: 42px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    background-color: white;
+    font-size: 20px;
+}

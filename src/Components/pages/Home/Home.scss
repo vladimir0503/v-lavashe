@@ -15,10 +15,10 @@
         line-height: 78px;
     }
 
-    p,
     ul {
         font-size: 36px;
         line-height: 44px;
+        margin: 0;
     }
 }
 
@@ -26,4 +26,61 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.Main--order_methods {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 0;
+}
+
+.Main--order_time {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 38px;
+}
+
+//For tablets 1000px
+
+@media screen and (max-width: 1050px) {
+    .Main--delivery_info {
+        width: 936px;
+        margin-bottom: 108px;
+
+        .Main--order_methods {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 28px;
+            line-height: 34px;
+        }
+
+        .Main--order_time {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 28px;
+            line-height: 34px;
+        }
+
+        ul {
+            margin: 0;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 28px;
+            line-height: 34px;
+        }
+    }
+
+    .Main--stock_img {
+        width: 936px;
+        height: 489px;
+    }
+
+    .Main--items {
+        width: 936px;
+        margin: 0 auto;
+    }
 }

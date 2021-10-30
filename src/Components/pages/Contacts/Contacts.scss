@@ -50,3 +50,16 @@
     border: 2px solid #ffc804;
     border-radius: 20px;
 }
+
+//For tablets 1000px
+
+@media screen and (max-width: 1050px) {
+    .Contacts--contentWrapper {
+        width: 936px;
+    }
+
+    .Contacts--map {
+        width: 444px;
+        height: 437px;
+    }
+}

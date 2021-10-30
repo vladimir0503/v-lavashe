@@ -40,3 +40,24 @@
         line-height: 44px;
     }
 }
+
+@media screen and (max-width: 1050px) {
+    .Footer--content {
+        width: 936px;
+        margin-bottom: 114px;
+
+        a {
+            font-size: 36px;
+            line-height: 44px;
+        }
+    }
+
+    .Footer--phone {
+        position: relative;
+        top: 25px;
+    }
+
+    .Footer--copyright {
+        width: 936px;
+    }
+} ;

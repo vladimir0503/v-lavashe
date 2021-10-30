@@ -50,3 +50,11 @@
         margin: 0 0 46px 0;
     }
 }
+
+//For tablets 1000px
+
+@media screen and (max-width: 1050px) {
+    .About--contentWrapper {
+        width: 936px;
+    }
+}

@@ -29,3 +29,11 @@ p {
         margin: 0 53px 0 0;
     }
 }
+
+// For tablets 1000px
+
+@media screen and (max-width: 1050px) {
+    .PageHeader--header {
+        width: 936px;
+    }
+}

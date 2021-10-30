@@ -55,3 +55,26 @@ span {
     color: white;
     font-size: 25px;
 }
+
+//For tablets 1000px
+
+@media screen and (max-width: 1050px) {
+    .Item--wrapper {
+        width: 276px;
+        height: 500px;
+
+        img {
+            width: 273px;
+            height: 262px;
+            object-fit: cover;
+        }
+    }
+
+    .Item--button_block {
+        margin-top: -31px;
+    }
+
+    .Item--name {
+        font-size: 27px;
+    }
+}

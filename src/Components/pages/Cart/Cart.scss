@@ -1,3 +1,7 @@
+.Cart--wrapper {
+    margin-bottom: 252px;
+}
+
 p {
     font-style: italic;
     font-weight: bold;
@@ -76,4 +80,24 @@ p {
     height: 170px;
     margin: 0 auto;
     border-bottom: 1px solid #000000;
+}
+
+//For tablets 1000px
+
+@media screen and (max-width: 1050px) {
+    .Cart--header {
+        width: 936px;
+    }
+
+    .Card--empty {
+        width: 936px;
+        margin-bottom: 252px;
+    }
+
+    .Card--sum_block {
+        button {
+            width: 414px;
+            height: 120px;
+        }
+    }
 }

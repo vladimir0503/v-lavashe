@@ -80,6 +80,10 @@
     align-items: center;
 }
 
+img[alt="trash"] {
+    cursor: pointer;
+}
+
 .CartItem--price {
     font-style: italic;
     font-weight: bold;
@@ -88,4 +92,35 @@
     letter-spacing: 0.1em;
     text-align: end;
     margin-right: 53px;
+}
+
+//For tablets 1000px
+
+@media screen and (max-width: 1050px) {
+    .CartItem--wrapper {
+        width: 936px;
+    }
+
+    .CartItem--itemImg {
+        width: 274.85px;
+        height: 170px;
+    }
+
+    .CartItem--button_selector {
+        margin-bottom: 20px;
+
+        div {
+            width: 71px;
+        }
+    }
+
+    .button_selector--btn1,
+    .button_selector--btn2 {
+        width: 71px;
+        height: 55px;
+    }
+
+    img[alt="trash"] {
+        margin: -22px 0 0 11px;
+    }
 }
