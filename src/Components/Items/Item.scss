@@ -2,7 +2,7 @@
     text-align: center;
     font-style: italic;
     font-weight: bold;
-    font-size: 36px;
+    // font-size: 36px;
     line-height: 44px;
 }
 
@@ -51,6 +51,21 @@
     }
 }
 
+.Item--price_block {
+    display: flex;
+    justify-content: space-between;
+    width: 305px;
+}
+
+.Item--stock {
+    opacity: 0;
+}
+
+.stockInit {
+    color: red;
+    opacity: 1;
+}
+
 span {
     color: white;
     font-size: 25px;
@@ -78,7 +93,13 @@ span {
         }
     }
 
-    .Item--name {
+    .Item--price_block {
+        width: 240px;
+    }
+
+    .Item--name,
+    .Item--stock,
+    .Item--price {
         font-size: 27px;
     }
 }

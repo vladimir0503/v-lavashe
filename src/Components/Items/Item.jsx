@@ -27,7 +27,10 @@ const Item = ({ imageUrl, name, price, promo }) => {
             <img src={imageUrl ? imageUrl : 'https://i.stack.imgur.com/y9DpT.jpg'} alt='item-img' />
             <p className='Item--name'>{name}</p>
             <div className='Item--button_block'>
-                <p>{price} р.</p>
+                <div className='Item--price_block'>
+                    <p className={`Item--stock ${promo ? 'stockInit' : null}`}>Акция!!!</p>
+                    <p className={`Item--price ${promo ? 'stockInit' : null}`}>{price} р.</p>
+                </div>
                 <button onClick={addItem}>
                     {itemCount
                         ? <span>{`в корзине ${itemCount}`}</span>
