@@ -26,12 +26,6 @@ const Cart = () => {
         dispatch(cleanCart());
     };
 
-    React.useEffect(() => {
-        return () => {
-            if (!items.flat().length) dispatch(cleanCart());
-        };
-    }, [items]);
-
     return (
         <div className='Cart--wrapper'>
             <div className='Cart--header'>

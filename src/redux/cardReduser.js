@@ -20,15 +20,6 @@ export const cardReducer = (state = initialState, action) => {
                 sum: state.sum + action.payload.price
             }
 
-        // case DELETE_CART_ITEM:
-        //     return {
-        //         ...state,
-        //         items: state.items.flat().find((item) => item.name === action.payload.name)
-        //             ? state.items.map(item => (item.find((item) => item.name === action.payload.name) ? item.filter(item => item.id !== action.payload.id) : item))
-        //             : [],
-        //         sum: state.sum - action.payload.price
-        //     }
-
         case DELETE_CART_ITEM:
             return {
                 ...state,

@@ -21,10 +21,15 @@ const CartItem = ({ imageUrl, name, price, id, count, sum, promo }) => {
     };
 
     const deleteItem = () => {
-        dispatch(deleteCartItem({ id, price, name }));
+        if (count !== 1) {
+            dispatch(deleteCartItem({ id, price, name }));
+        } else {
+            dispatch(deleteItemsGroup({ name, sum }));
+        };
     };
 
     const deleteGroup = () => {
+        if (!window.confirm('Вы уверены?')) return;
         dispatch(deleteItemsGroup({ name, sum }));
     };
 
