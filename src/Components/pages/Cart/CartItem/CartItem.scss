@@ -42,6 +42,12 @@
 .CartItem--button_selector {
     display: flex;
 
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     div {
         @extend %btn-selector-text;
         display: flex;
