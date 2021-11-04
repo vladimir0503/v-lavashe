@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import logo from '../../common/images/logo.png';
 import cart from '../../common/images/cart.png'
 import NavBar from './NavBar/NavBar';
+import BurgerMenu from './BurgerMenu/BurgerMenu';
 
 import './Header.scss';
 
@@ -42,6 +43,7 @@ const Header = () => {
                     </div>
                 </div>
                 <NavBar />
+                <BurgerMenu />
             </header>
         </>
     );

@@ -2,7 +2,6 @@
     text-align: center;
     font-style: italic;
     font-weight: bold;
-    // font-size: 36px;
     line-height: 44px;
 }
 
@@ -101,5 +100,49 @@ span {
     .Item--stock,
     .Item--price {
         font-size: 25px;
+    }
+}
+
+// For mobile 768px
+
+@media screen and (max-width: 780px) {
+    .Item--wrapper {
+        width: 199.55px;
+        height: 327px;
+
+        img {
+            width: 192.59px;
+            height: 150px;
+            margin: 0 auto;
+            margin-top: 2px;
+        }
+    }
+
+    .Item--button_block {
+        button {
+            width: 163px;
+            height: 55px;
+
+            span {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .Item--price_block {
+        width: 179px;
+    }
+
+    .Item--stock,
+    .Item--price,
+    .Item--name {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .Item--name {
+        &.currentSize {
+            font-size: 21px;
+        }
     }
 }

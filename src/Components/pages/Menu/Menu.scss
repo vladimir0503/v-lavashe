@@ -73,3 +73,24 @@
         margin-left: 351px;
     }
 }
+
+// For mobile 768px
+
+@media screen and (max-width: 780px) {
+    .Menu--sort_block__btn_block {
+        button {
+            width: 213.33px;
+            height: 82px;
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+
+    .Menu--wrapper__items_block {
+        width: 693px;
+    }
+
+    .Menu--wrapper__loader-block {
+        margin-left: 228px;
+    }
+}

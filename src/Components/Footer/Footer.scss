@@ -36,6 +36,8 @@
     margin: 0 auto;
 
     p {
+        font-style: normal;
+        font-weight: normal;
         font-size: 36px;
         line-height: 44px;
     }
@@ -60,4 +62,39 @@
     .Footer--copyright {
         width: 936px;
     }
-} ;
+}
+
+// For mobile 768px
+
+@media screen and (max-width: 780px) {
+    .Footer--content {
+        width: 694px;
+
+        img {
+            width: 215px;
+            height: 65px;
+        }
+
+        a {
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+
+    .Footer--phone {
+        position: relative;
+        top: 8px;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .Footer--copyright {
+        width: 694px;
+        margin: 0 auto;
+
+        p {
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+}

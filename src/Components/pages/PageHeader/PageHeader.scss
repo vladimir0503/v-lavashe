@@ -37,3 +37,18 @@ p {
         width: 936px;
     }
 }
+
+// For mobile 768px
+
+@media screen and (max-width: 780px) {
+    .PageHeader--header {
+        width: 693px;
+    }
+
+    .PageHeader--title_block {
+        h1 {
+            font-size: 55px;
+            line-height: 67px;
+        }
+    }
+}

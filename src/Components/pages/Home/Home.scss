@@ -1,6 +1,3 @@
-.Main--wrapper {
-}
-
 .Main--stock_img {
     margin-bottom: 74px;
 }
@@ -23,6 +20,8 @@
 }
 
 .Main--items {
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -83,4 +82,26 @@
         width: 936px;
         margin: 0 auto;
     }
+}
+
+// For mobile 768px
+
+@media screen and (max-width: 780px) {
+    .Main--stock_img {
+        width: 693px;
+        height: 350px;
+    }
+
+    .Main--delivery_info {
+        width: 693px;
+    }
+
+    .Main--items {
+        width: 693px;
+    }
+}
+
+// For mobile 320
+
+@media screen and (max-width: 414px) {
 }

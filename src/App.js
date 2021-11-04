@@ -17,7 +17,7 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <main className='App--content'>
+          <main className='Main'>
             <Route exact path="/">
               <Redirect to="/home" />
             </Route>

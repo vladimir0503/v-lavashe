@@ -101,3 +101,39 @@ p {
         }
     }
 }
+
+// For mobile 768px
+
+@media screen and (max-width: 780px) {
+    .Cart--header {
+        width: 694px;
+    }
+
+    .Card--empty {
+        width: 694px;
+    }
+
+    .Card--sum_block {
+        button {
+            width: 277px;
+            height: 82px;
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        p {
+            width: 336px;
+            text-align: end;
+        }
+    }
+
+    .Card--title_block {
+        button {
+            margin-bottom: -15px;
+            width: 171px;
+            height: 37px;
+            font-size: 19px;
+            line-height: 29px;
+        }
+    }
+}

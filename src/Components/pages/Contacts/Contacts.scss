@@ -63,3 +63,17 @@
         height: 437px;
     }
 }
+
+// For mobile 768px
+
+@media screen and (max-width: 780px) {
+    .Contacts--contentWrapper {
+        width: 693px;
+        flex-direction: column;
+    }
+
+    .Contacts--map {
+        width: 693px;
+        height: 389px;
+    }
+}
