@@ -42,7 +42,7 @@ const BurgerMenu = () => {
                         <img className='BurgerMenu__logo' src={logo} alt='logo' />
                         <nav>
                             <ul>
-                                <li onClick={closeBurger}><Link to="/home">Главная</Link></li>
+                                <li onClick={closeBurger}><Link to="/">Главная</Link></li>
                                 <li onClick={closeBurger}><Link to="/menu">Меню</Link></li>
                                 <li onClick={closeBurger}><Link to="/about">О нас</Link></li>
                                 <li onClick={closeBurger}><Link to="/contacts">Контакты</Link></li>
