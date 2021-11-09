@@ -75,3 +75,33 @@
         }
     }
 }
+
+// For mobile 320
+
+@media screen and (max-width: 414px) {
+    .About--contentWrapper {
+        width: 290px;
+        margin-bottom: 26px;
+
+        p {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        span,
+        h2 {
+            font-size: 26px;
+        }
+    }
+
+    .About--btnBlock {
+        button {
+            width: 135px;
+            height: 37px;
+            border-radius: 30px;
+            font-size: 15px;
+            line-height: 18px;
+            letter-spacing: 0.1em;
+        }
+    }
+}

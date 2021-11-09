@@ -94,3 +94,27 @@
         margin-left: 228px;
     }
 }
+
+// For mobile 320
+
+@media screen and (max-width: 414px) {
+    .Menu--sort_block__btn_block {
+        flex-direction: column;
+        margin-bottom: 21px;
+
+        button {
+            width: 290px;
+            height: 40px;
+            border-radius: 30px;
+            margin-bottom: 8px;
+        }
+    }
+
+    .Menu--wrapper__items_block {
+        width: 290px;
+    }
+
+    .Menu--wrapper__loader-block {
+        margin-left: 25px;
+    }
+}

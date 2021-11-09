@@ -94,3 +94,14 @@
         }
     }
 }
+
+// For mobile 320
+
+@media screen and (max-width: 414px) {
+    .BurgerMenu__img {
+        width: 20px;
+        height: 20px;
+        margin-left: 63px;
+        margin-top: -11px;
+    }
+}

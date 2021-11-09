@@ -37,7 +37,8 @@ const Cart = () => {
                     {items.flat().length
                         ? <>
                             <button onClick={handleCheckout}>Оформить заказ</button>
-                            <p>Общая сумма {sum} р.</p>
+                            <p className='Card--sum'>Общая сумма {sum} р.</p>
+                            <p className='Card--sum_mobile'>Сумма: {sum} р.</p>
                         </>
                         : <Link to='/'><button>На главную</button></Link>
                     }

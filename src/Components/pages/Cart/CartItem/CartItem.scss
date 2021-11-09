@@ -187,3 +187,38 @@ img[alt="trash"] {
         line-height: 29px;
     }
 }
+
+// For mobile 320
+
+@media screen and (max-width: 414px) {
+    .CartItem--wrapper {
+        flex-direction: column;
+        width: 290px;
+        padding: 6px 0 21px 0;
+    }
+
+    .CartItem--itemImg {
+        width: 291px;
+        height: 120px;
+        border-radius: 20px;
+        margin-bottom: 8px;
+    }
+
+    .CartItem--name {
+        margin-bottom: 15px;
+    }
+
+    .CartItem--control_block {
+        margin: 0;
+    }
+
+    .CartItem--button_selector {
+        position: relative;
+        left: 22px;
+    }
+
+    img[alt="trash"] {
+        position: relative;
+        left: 40px;
+    }
+}

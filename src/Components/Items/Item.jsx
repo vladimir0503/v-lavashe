@@ -22,10 +22,19 @@ const Item = ({ imageUrl, name, price, promo }) => {
         dispatch(addCardItem(newItem));
     };
 
+    const currentNameSize = length => {
+        if (length >= 10) {
+            return 'currentSize'
+        } else {
+            return '';
+        };
+    };
+
     return (
         <div className='Item--wrapper'>
             <img src={imageUrl ? imageUrl : 'https://i.stack.imgur.com/y9DpT.jpg'} alt='item-img' />
-            <p className={`Item--name ${name === 'С фрикадельками' ? 'currentSize' : ''}`}>{name}</p>
+            {/* <p className={`Item--name ${name === 'С фрикадельками' ? 'currentSize' : ''}`}>{name}</p> */}
+            <p className={`Item--name ${currentNameSize(name.length)}`}>{name}</p>
             <div className='Item--button_block'>
                 <div className='Item--price_block'>
                     <p className={`Item--stock ${promo ? 'stockInit' : null}`}>Акция!!!</p>

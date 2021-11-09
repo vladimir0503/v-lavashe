@@ -201,6 +201,8 @@
     .Header--wrapper {
         height: 94px;
         padding: 0;
+        margin-bottom: 20px;
+        background: linear-gradient(180deg, #ffc804 79%, #ffffff 99.99%, rgba(255, 255, 255, 0) 100%);
     }
 
     .Header--delivery_tablet {
@@ -208,11 +210,12 @@
     }
 
     .Header--contentBlock {
-        width: 270px;
-        height: 0;
+        align-items: center;
+        width: 290px;
         margin-bottom: 0;
 
         button {
+            margin-top: -5px;
             width: 40px;
             height: 40px;
         }
@@ -224,6 +227,7 @@
     }
 
     .Header--phone {
+        margin-top: -5px;
         a {
             font-size: 14px;
             line-height: 17px;
@@ -235,5 +239,13 @@
         right: 3px;
         width: 28.08px;
         height: 25.95px;
+    }
+
+    .Header--items_count {
+        bottom: 27px;
+        left: 21px;
+        width: 15px;
+        height: 15px;
+        font-size: 12px;
     }
 }

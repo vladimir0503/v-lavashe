@@ -43,6 +43,14 @@
     }
 }
 
+.Footer--mail--mobile {
+    display: none;
+}
+
+.Footer--time--mobile {
+    display: none;
+}
+
 @media screen and (max-width: 1050px) {
     .Footer--content {
         width: 936px;
@@ -95,6 +103,80 @@
         p {
             font-size: 24px;
             line-height: 29px;
+        }
+    }
+}
+
+// For mobile 320
+
+@media screen and (max-width: 414px) {
+    .Footer--wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 165px;
+        padding: 0;
+    }
+
+    .Footer--logoWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Footer--content {
+        width: 290px;
+        margin-bottom: 0;
+
+        img {
+            width: 133px;
+            height: 39px;
+        }
+    }
+
+    .Footer--mail {
+        display: none;
+    }
+
+    .Footer--mail--mobile {
+        display: block;
+        position: relative;
+        bottom: 5px;
+    }
+
+    .Footer--time--mobile {
+        position: relative;
+        top: 5px;
+        display: block;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .Footer--phone {
+        top: 0;
+
+        a {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 0;
+        }
+    }
+
+    .Footer--phoneTwo {
+        position: relative;
+        bottom: 14px;
+    }
+
+    .Footer--copyright {
+        width: 290px;
+        position: relative;
+        top: 24px;
+
+        p {
+            font-size: 13px;
+            line-height: 16px;
         }
     }
 }

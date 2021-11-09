@@ -146,3 +146,67 @@ span {
         }
     }
 }
+
+// For mobile 320
+
+@media screen and (max-width: 414px) {
+    .Item--wrapper {
+        width: 130px;
+        height: 294px;
+        margin-bottom: 16px;
+
+        img {
+            width: 126px;
+            height: 139px;
+        }
+    }
+
+    .Item--stock,
+    .Item--price,
+    .Item--name {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .Item--name {
+        margin-bottom: 26px;
+    }
+
+    .Item--price_block {
+    }
+
+    .Item--button_block {
+        button {
+            position: relative;
+            left: 7px;
+            width: 120px;
+            height: 40px;
+            font-size: 18px;
+            line-height: 22px;
+
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .Item--name {
+        &.currentSize {
+            font-size: 13px;
+        }
+    }
+
+    .Item--price {
+        position: relative;
+        left: 10px;
+    }
+
+    .Item--stock {
+        position: relative;
+        left: 69px;
+    }
+
+    .stockInit {
+        font-size: 15px;
+    }
+}

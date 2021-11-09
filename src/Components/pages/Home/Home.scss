@@ -104,4 +104,27 @@
 // For mobile 320
 
 @media screen and (max-width: 414px) {
+    .Main--stock_img {
+        width: 290px;
+        height: 146px;
+        border-radius: 20px;
+        margin-bottom: 35px;
+    }
+
+    .Main--items {
+        width: 290px;
+    }
+
+    .Main--delivery_info {
+        width: 290px;
+
+        .Main--order_time,
+        .Main--order_methods,
+        ul {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
 }

@@ -77,3 +77,45 @@
         height: 389px;
     }
 }
+
+// For mobile 320
+
+@media screen and (max-width: 414px) {
+    .Contacts--contentWrapper {
+        width: 290px;
+        border-bottom: 1px solid #000000;
+        margin-bottom: 0;
+
+        p,
+        a {
+            font-size: 20px;
+            line-height: 24px;
+            white-space: nowrap;
+        }
+    }
+
+    .Contacts--infoBlock {
+        width: 290px;
+    }
+
+    .Contacts--infoItem {
+        img[alt="gps"] {
+            width: 30px;
+            height: 30px;
+        }
+
+        img[alt="phone"] {
+            width: 25px;
+            height: 25px;
+        }
+
+        img[alt="email"] {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .Contacts--map {
+        display: none;
+    }
+} ;
